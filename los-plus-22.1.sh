@@ -36,11 +36,6 @@ rm -rf out/target/product/rosy/lineage*.zip*
 export b_date=$(date +%Y%m%d)
 export s_file="out/target/product/rosy/lineage-22.1-$b_date-UNOFFICIAL-rosy.zip"
 source build/envsetup.sh
-export CCACHE_EXEC=/usr/bin/ccache
-export USE_CCACHE=1
-ccache -o compression_level=1
-ccache -o max_size=8G
-ccache -z
 export BUILD_USERNAME=aepranata
 export BUILD_HOSTNAME=a3-machine
 brunch rosy
