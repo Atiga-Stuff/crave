@@ -25,6 +25,7 @@ echo ""
 cd kernel/xiaomi/rosy
 git submodule init
 git submodule update --recursive
+cd -
 echo "==================="
 echo "Fetch KernelSU done"
 echo "==================="
