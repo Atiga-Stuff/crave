@@ -37,6 +37,8 @@ rm -rf out/target/product/rosy/lineage*.zip*
 export b_date=$(date +%Y%m%d)
 export s_file="out/target/product/rosy/lineage-22.1-$b_date-UNOFFICIAL-rosy.zip"
 source build/envsetup.sh
+export TARGET_INCLUDE_KSU=true
+export USE_ATIGA_STUFF=true
 export BUILD_USERNAME=aepranata
 export BUILD_HOSTNAME=a3-machine
 brunch rosy
